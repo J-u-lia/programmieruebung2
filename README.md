@@ -14,5 +14,5 @@ Die Datei activity.csv enthält die gemessenen Leistungsdaten. Diese werden mit 
 
 Schließlich wird das Skript power_curve.py erstellt, das die sortierten Daten grafisch darstellt und als Bild speichert. Dadurch entsteht eine anschauliche Darstellung der Leistungskurve über die Zeit.
 
-Grafik:
-![alt text](<Leistungskurve I-1.png>)
+
+![alt text](Leistungskurve_I.png)
