@@ -1,7 +1,7 @@
 # Exercises for the course Programming 2
 Diese Aufgabe wurde erledigt von:
 - Julia Rössler
-- Katherina Schröder
+- Katharina Schroeder
 
 ## Exercise 1: Power Curve
 In diesem Projekt wird eine sogenannte "Power Curve" (Leistungskurve) aus Aktivitätsdaten erstellt. Dabei werden die Leistungswerte (Power) aus der Datei activity.csv eingelesen, mit einem selbst implementierten Sortieralgorithmus (bubble_sort) sortiert und anschließend als Grafik dargestellt und gespeichert.
@@ -14,5 +14,5 @@ Die Datei activity.csv enthält die gemessenen Leistungsdaten. Diese werden mit 
 
 Schließlich wird das Skript power_curve.py erstellt, das die sortierten Daten grafisch darstellt und als Bild speichert. Dadurch entsteht eine anschauliche Darstellung der Leistungskurve über die Zeit.
 
-Gravik:
-![alt text](<Leistungskurve I.png>)
+Grafik:
+![alt text](<Leistungskurve I-1.png>)

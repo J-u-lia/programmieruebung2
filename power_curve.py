@@ -13,27 +13,21 @@ print(sorted_power_W[::-1])
 time = np.arange(1804, 0, -1)
 time = time / 60 
 
-fig,ax = plt.subplots(figsize=(10, 5))
+fig, ax = plt.subplots()
 
-ax.plot(time, sorted_power_W, color='blue')
-plt.xlabel("Zeit [min]")
-
-ymin = -20
-ymax = 450
-ax.set_ylim(ymin, ymax)
-ax.set_yticks([0, 100, 200, 300, 400])
-ax.set_yticklabels([f"{y} W/kg" for y in [0, 100, 200, 300, 400]])
-
-
-#ymin = 0
-#ymax = max(sorted_power_W) + 1
-#ax.set_ylim(ymin, ymax)
-#ax.set_yticks(np.linspace(ymin, ymax, 6))
-#ax.set_yticklabels([f"{int(y)} W/kg" for y in np.linspace(ymin, ymax, 6)])
-
+ax.plot(time, sorted_power_W, color='blue', linewidth=2)
+ax.set_ylim(bottom=0)
+ax.set_xlim(left=0, right=30)
+yticks = ax.get_yticks()
+ax.set_yticks(yticks)
+ax.set_yticklabels([f"{int(y)} W/kg" for y in yticks])
+xticks = ax.get_xticks()
+ax.set_xticks(xticks)
+ax.set_xticklabels([f"{int(x)} min" for x in xticks])
+plt.xlabel("time [min]")
 plt.ylabel("Leistung [W/kg]")
-plt.grid(True, linestyle='--', linewidth=0.5, alpha=0.7)
-plt.title("Leistungstest")
+plt.grid()
+plt.title("Leistungskurve I")
 
 plt.savefig('C:/Users/famro/git/programmieruebung2/figures/Leistungskurve I.png')
 plt.show()
